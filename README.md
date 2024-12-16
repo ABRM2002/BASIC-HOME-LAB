@@ -53,7 +53,7 @@ Olaf Configuration: https://github.com/olafhartong/sysmon-modular/blob/master/sy
 
 ### 🚀 Elevate Your Learning with Hands-On Virtualization: Theoretical knowledge forms the foundation, but the Home Lab catapults you into the realm of practical mastery. Take on cyber challenges with confidence, equip your mental toolkit, and embark on a journey of true skill refinement! 🚀🧠
 
-## 1.CHANGE YOUR NETWORK OPTIONS BASED ON YOUR SCENARIO:
+## A: CHANGE YOUR NETWORK OPTIONS BASED ON YOUR SCENARIO:
 
 ### Scenario 1: Test tools using internet connectivity : Use default settings - NAT 
 
