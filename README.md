@@ -2,9 +2,11 @@
 
 - ### **💡 What's a Home Lab?: Think of it as your digital workshop, a safe haven to tinker, test, and refine your cybersecurity skills. A Home Lab is a personalized setup where you can build virtual environments, play with cutting-edge tools, and simulate real-world scenarios, all from the comfort of your home. 🏠💡**
 
-### STEP 1: REQUIREMENTS :- 
-
 - ### **🔍 The Power of Practical Learning: Theory is essential, but the Home Lab takes you beyond the textbooks.  Hands-on learning allows you to grasp complex concepts, fortify your technical abilities, and face cyber challenges head-on! 🧠🔍**
+
+---
+
+## STEP 1:REQUIREMENTS :- 
 
 ### 1. VIRTUAL ENVIRONMENT : VIRTUAL BOX OR VMWARE:-
 
@@ -46,7 +48,7 @@
 
 ---
 
-### STEP 2: CONFIGURATION :- 
+## STEP 2: CONFIGURATION :- 
 
 - #### 🔧 **Crafting the Perfect Virtual Workspace: A properly configured virtual machine is the cornerstone of your Home Lab, empowering you to experiment, fine-tune, and elevate your skills within a secure environment.**🏠🔧
 
