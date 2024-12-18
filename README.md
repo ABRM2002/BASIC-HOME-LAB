@@ -8,7 +8,7 @@
 
 ## STEP 1:REQUIREMENTS :- 
 
-### 1. VIRTUAL ENVIRONMENT : VIRTUAL BOX OR VMWARE:-
+### 1. VIRTUAL ENVIRONMENT : VIRTUAL BOX OR VMWARE :-
 
 ![Screenshot 2024-12-16 165429](https://github.com/user-attachments/assets/34ee4436-dc10-471e-8132-67049ac5bdf2)
 
@@ -16,7 +16,7 @@
 
 ---
 
-### 2. OPERATING SYSTEM : WINDOWS 10 AND KALI LINUX:-
+### 2. OPERATING SYSTEM : WINDOWS 10 AND KALI LINUX :-
 
 ### - WINDOWS-10/11: ![image](https://github.com/user-attachments/assets/1d4e8060-5225-44f7-9f1c-892d225ef48b)
 
@@ -31,7 +31,7 @@
 
 ---
 
-### 3. TOOLS USED : SPLUNK AND SYSMON WITH OLAF CONFIGURATION:-
+### 3. TOOLS USED : SPLUNK AND SYSMON WITH OLAF CONFIGURATION :-
 
 ### - SPLUNK ENTERPRISE: ![Screenshot 2024-12-16 170122](https://github.com/user-attachments/assets/84b9c38e-d06e-41d0-8898-af7d9abf359c)
 
