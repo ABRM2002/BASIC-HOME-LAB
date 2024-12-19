@@ -50,9 +50,9 @@
 
 ## STEP 2: CONFIGURATION :- 
 
-- #### 🔧 **Crafting the Perfect Virtual Workspace: A properly configured virtual machine is the cornerstone of your Home Lab, empowering you to experiment, fine-tune, and elevate your skills within a secure environment.**🏠🔧
+- ### **🔧 Crafting the Perfect Virtual Workspace: A properly configured virtual machine is the cornerstone of your Home Lab, empowering you to experiment, fine-tune, and elevate your skills within a secure environment.🏠🔧**
 
-- #### 🚀 **Elevate Your Learning with Hands-On Virtualization: Theoretical knowledge forms the foundation, but the Home Lab catapults you into the realm of practical mastery. Take on cyber challenges with confidence, equip your mental toolkit, and embark on a journey of true skill refinement!** 🚀🧠
+- ### **🚀 Elevate Your Learning with Hands-On Virtualization: Theoretical knowledge forms the foundation, but the Home Lab catapults you into the realm of practical mastery. Take on cyber challenges with confidence, equip your mental toolkit, and embark on a journey of true skill refinement! 🚀🧠**
 
 ---
 
