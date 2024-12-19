@@ -54,17 +54,46 @@
 
 - #### 🚀 **Elevate Your Learning with Hands-On Virtualization: Theoretical knowledge forms the foundation, but the Home Lab catapults you into the realm of practical mastery. Take on cyber challenges with confidence, equip your mental toolkit, and embark on a journey of true skill refinement!** 🚀🧠
 
+---
 
 ### A: CHANGE YOUR NETWORK OPTIONS BASED ON YOUR SCENARIO :-
 
-- ### Scenario 1: Test tools using internet connectivity : Use default settings - NAT 
+- #### Scenario 1: Test tools using internet connectivity : Use default settings - NAT 
 
-- ### Scenario 2: Analyze Malware and identify additional IOC: Use Internal network / unattached
+- #### Scenario 2: Analyze Malware and identify additional IOC: Use Internal network / unattached
 
+
+![Screenshot 2024-12-19 070015](https://github.com/user-attachments/assets/32bb2cd4-4220-4ee6-8fc9-6594c6eb865a)
+
+
+---
+
+## **Since I'm using this home lab to analyze malware im gonna go for scenario 2** :-
  
+###  1. **Change network to internal network and create a name for it** :
+
+#### - On your windows machine -> Settings -> Network -> Internal network -> change name (Do the same for kali machine as well by selecting the name associated with windows machine) - **IN THEORY OUR 2 MACHINES ARE NOW IN THE SAME NETWORK**
+
+---
+
+###  2. **Statically assign the IP address for both machines** : 
+
+#### - On windows machine click -> Globe -> Internet and network settings -> Change Adapter options -> Right click ethernet -> properties -> IPV4 -> use following ip address -> for example 192.168.20.10 double check by opening cmd and ipconfig see the ip
+
+![Screenshot 2024-12-19 070753](https://github.com/user-attachments/assets/3134a9c3-c3cb-4030-b38d-42268dada9a8)
 
 
 
+#### - On kali machine right click ethernet icon -> edit connections -> wired connections -> settings -> ipv4 -> manual -> add -> 192.168.20.11 -> mask - 24 -> save double check with if config 
+
+![Screenshot 2024-12-19 070628](https://github.com/user-attachments/assets/04daa2b9-c0df-40b9-912c-4b3039d63436)
 
 
+#### - Head over to windows machine and try pinging kali and take a snapshot
+
+#### - **Now you are ready to play around!**
+
+---
+
+## STEP 3: HOW TO GENERATE TELEMETRY AND DETECT EVIL :- 
 
