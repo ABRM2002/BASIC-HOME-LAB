@@ -186,3 +186,36 @@
 ---
  
  - ### D. SPLUNK :-
+
+ - We need to make sure splunk is configured to ingest sysmon logs
+
+ - On windows go to Program files -> spluk -> etc -> system -> default -> copy inputs.conf file -> local folder -> edit input.conf file [ just download and paste this file : https://www.dropbox.com/scl/fi/620i6i0o4idzrtwlqp0qp/inputs.conf?rlkey=elni2v55mpzfab72qxr5wxk3s&e=1&dl=0 ]
+
+ - Services -> splunkd service -> restart/start  
+
+ - Need to create an index -> endpoint
+
+ - Go to splunk -> settings indexes -> new index -> endpoint -> save
+
+ - Now go to search & reporting -> search index=endpoint data should be ingested
+
+ - An app helps better to ingest sysmon data -> go to apps -> find more apps -> download splunk add on
+
+
+![Screenshot 2024-12-21 221642](https://github.com/user-attachments/assets/5ce371c9-88c3-4865-8a26-e12e7aa03420)
+
+
+ - Now search index=endpoint you should have additional fields like parent process exec, process exec
+
+ - now query with our malware - resume.pdf.exe -> you get more event codes -> now expand event 1 -> take note of process id and process guid
+
+   
+
+ - copy process guid and query to your index=endpoint search and query with |Table _Time,ParentImage,Image.CommandLine
+
+ - U will get the result where our parent image - resume.pdf.exe[our malware ] had spawned cmd.exe which eventualy ran net user net localgroup ipconfig [ which we had ran on our cmd if u remenmber]
+
+![Screenshot 2024-12-21 221147](https://github.com/user-attachments/assets/f4e01334-db6e-4336-830b-81ccb735ba23)
+
+
+## So this is how you can generate telemetry which can be used to alert analysts the next time a similar activity that occurs in the future
