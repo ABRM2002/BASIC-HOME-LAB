@@ -105,7 +105,9 @@
 
 ### STEPS :-
 
-- #### A. Enable RDP! 
+- ### A. KALI :-
+
+- #### A. Enable RDP on Windows! 
 
 - Open Settings: -> Press Windows + I to open the Settings app. // Go to System > Remote Desktop: -> Toggle on the Enable Remote Desktop option. // Confirm your selection if prompted.
 
@@ -134,4 +136,30 @@
 
  - new tab -> same directory ls -> python3 -m http.server 9999 -> enter [ this will allow our test machine to access our kali machine and start downloading the malware from there ]
 
- - 
+---
+ 
+ - ### B. WINDOWS :-
+
+ - Go to security center -> virus and threat protection -> manage settings -> disable real time protection
+
+ - open browser and type in ip of kali : 192.168.20.11:9999 -> click resume.pdf.exe -> download and open it
+
+ - open cmd with admin priviledges -> netstat -anob [ to see an estb connection with our kali machine ]
+
+ - Now head over to kali where looking at our handler we should have an open shell we now have a connection [ meterpreter tab ]
+
+---
+ 
+ - ### C. KALI II :-
+
+ -  type in shell [ to establish shell on our test machine ]
+
+ - type in net user
+
+ - type in netl localgroup
+
+ - type in ipconfig
+
+---
+ 
+ - ### D. SPLUNK :-
