@@ -96,7 +96,7 @@
 
 ## STEP 3: HOW TO GENERATE TELEMETRY AND DETECT EVIL :- 
 
-#### Prerequisites :-
+### Prerequisites :-
 
 ![Screenshot 2024-12-21 084318](https://github.com/user-attachments/assets/0334ce6a-6d58-48a1-a424-4ba9da0366ca)
 
@@ -110,7 +110,7 @@
 
 - Open Settings: -> Press Windows + I to open the Settings app. // Go to System > Remote Desktop: -> Toggle on the Enable Remote Desktop option. // Confirm your selection if prompted.
 ---
-- #### B. Start scanning all portts using nmap :-
+- #### B. Start scanning all ports using nmap :-
 
 - On your kali open terminal -> type command nmap -A 192.168.20.10 -Pn where -Pn skips ping the ip adress is of our victim machine - windows machine and -A enables os detection version detection script scanning and traceroute : will identify any ports that are open
 
