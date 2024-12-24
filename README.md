@@ -72,7 +72,7 @@
  
 ###  1. **Change network to internal network and create a name for it** :
 
-#### - On your windows machine -> Settings -> Network -> Internal network -> change name (Do the same for kali machine as well by selecting the name associated with windows machine) - **IN THEORY OUR 2 MACHINES ARE NOW IN THE SAME NETWORK**
+- ####  On your windows machine -> Settings -> Network -> Internal network -> change name (Do the same for kali machine as well by selecting the name associated with windows machine) - **IN THEORY OUR 2 MACHINES ARE NOW IN THE SAME NETWORK**
 
 ---
 
@@ -88,9 +88,9 @@
 ![Screenshot 2024-12-19 070628](https://github.com/user-attachments/assets/04daa2b9-c0df-40b9-912c-4b3039d63436)
 
 
-#### - Head over to windows machine and try pinging kali and take a snapshot
+- ####  Head over to windows machine and try pinging kali and take a snapshot
 
-#### - **Now you are ready to play around!**
+- ####  **Now you are ready to play around!**
 
 ---
 
