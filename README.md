@@ -78,7 +78,7 @@
 
 ###  2. **Statically assign the IP address for both machines** : 
 
-#### - **On windows machine click -> Globe -> Internet and network settings -> Change Adapter options -> Right click ethernet -> properties -> IPV4 -> use following ip address -> for example 192.168.20.10 double check by opening cmd and ipconfig see the ip**
+- ####  **On windows machine click -> Globe -> Internet and network settings -> Change Adapter options -> Right click ethernet -> properties -> IPV4 -> use following ip address -> for example 192.168.20.10 double check by opening cmd and ipconfig see the ip**
 
 ![Screenshot 2024-12-19 070753](https://github.com/user-attachments/assets/3134a9c3-c3cb-4030-b38d-42268dada9a8)
 
